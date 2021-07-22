@@ -21,7 +21,7 @@ We also provide the pretrained model for ResNet50 (single crop and 5 crops)
 |  ReSSL | ResNet50 | 256 | 200  | 1 | 69.9 % | [ressl-200.pth](https://drive.google.com/file/d/16Ib4rvEvB_rdQThPxkoOb9wvCALzPTZd/view?usp=sharing) |
 |  ReSSL | ResNet50 | 256 | 200  | 5 | 74.7 % | [ressl-multi-200.pth](https://drive.google.com/file/d/1usvvFAw_1bOaiXBgxXG9kwOOPb0VAy0Y/view?usp=sharing) |
 
-If you want to test the pretained mdol, pealse download the weights from the link above, and move it to the checkpoint folder (create one if you don't have). The evaluation scripts also has been provided in script/train.sh
+If you want to test the pretained mdol, pealse download the weights from the link above, and move it to the checkpoints folder (create one if you don't have .checkpoints/ directory). The evaluation scripts also has been provided in script/train.sh
 
 
 ## Citation
