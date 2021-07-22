@@ -9,6 +9,7 @@ import torch.nn as nn
 import argparse
 import math
 import torch.nn.functional as F
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--port', type=int, default=23457)
@@ -118,6 +119,9 @@ def main():
         num_workers=num_workers, pin_memory=True, sampler=train_sampler, drop_last=True)
     
     criterion = nn.CrossEntropyLoss().cuda(local_rank)
+
+    if not os.path.exists('checkpoints'):
+        os.makedirs('checkpoints')
 
     checkpoint_path = 'checkpoints/ressl-multi-{}-{}.pth'.format(args.backbone, epochs)
     print('checkpoint_path:', checkpoint_path)
