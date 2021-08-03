@@ -11,10 +11,9 @@ class ReSSL(nn.Module):
     """
     def __init__(self, backbone='resnet50', dim=512, K=65536*2, m=0.999):
         """
-        dim: feature dimension (default: 128)
-        K: queue size; number of negative keys (default: 65536)
+        dim: feature dimension (default: 512)
+        K: queue size; number of negative keys (default: 65536*2)
         m: moco momentum of updating key encoder (default: 0.999)
-        T: softmax temperature (default: 0.07)
         """
         super(ReSSL, self).__init__()
 
