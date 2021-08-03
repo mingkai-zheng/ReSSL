@@ -109,10 +109,10 @@ class ReSSL(nn.Module):
     def forward(self, im_q, im_k):
         """
         Input:
-            im_q: a batch of query images
-            im_k: a batch of key images
+            im_q: list of contrastive augmented image
+            im_k: weak augmented image
         Output:
-            logits, targets
+            logitsq, logitsk
         """
 
         q_list = [self.encoder_q(im) for im in im_q]

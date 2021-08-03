@@ -21,7 +21,6 @@ class ReSSL(nn.Module):
         self.m = m
 
         # create the encoders
-        # num_classes is the output fc dimension
         self.encoder_q = BackBone(backbone=backbone, dim=dim)
         self.encoder_k = BackBone(backbone=backbone, dim=dim)
 
@@ -109,10 +108,10 @@ class ReSSL(nn.Module):
     def forward(self, im_q, im_k):
         """
         Input:
-            im_q: a batch of query images
-            im_k: a batch of key images
+            im_q: contrastive augmented image
+            im_k: weak augmented image
         Output:
-            logits, targets
+            logitsq, logitsk
         """
 
         q = self.encoder_q(im_q)
