@@ -1,4 +1,4 @@
-# ReSSL: Relational Self-Supervised Learning with Weak Augmentation
+# ReSSL: Relational Self-Supervised Learning with Weak Augmentation (NeurIPS 2021)
 
 This repository contains PyTorch evaluation code, training code and pretrained models for ReSSL.
 
