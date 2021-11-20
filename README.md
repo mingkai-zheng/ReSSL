@@ -2,7 +2,7 @@
 
 This repository contains PyTorch evaluation code, training code and pretrained models for ReSSL.
 
-For details see [ReSSL: Relational Self-Supervised Learning with Weak Augmentation](https://arxiv.org/abs/2107.09282) by Mingkai Zheng, Shan You, Fei Wang, Chen Qian, Changshui Zhang, Xiaogang Wang and Chang Xu
+For details see [ReSSL: Relational Self-Supervised Learning with Weak Augmentation](https://proceedings.neurips.cc/paper/2021/file/14c4f36143b4b09cbc320d7c95a50ee7-Paper.pdf) by Mingkai Zheng, Shan You, Fei Wang, Chen Qian, Changshui Zhang, Xiaogang Wang and Chang Xu
 
 ![ReSSL](img/framework.png)
 
@@ -27,13 +27,14 @@ If you want to test the pretained model, please download the weights from the li
 ## Citation
 If you find that ReSSL interesting and help your research, please consider citing it:
 ```
-@misc{zheng2021ressl,
-      title={ReSSL: Relational Self-Supervised Learning with Weak Augmentation}, 
+
+@inproceedings{
+      zheng2021ressl,
+      title={Re{SSL}: Relational Self-Supervised Learning with Weak Augmentation},
       author={Mingkai Zheng and Shan You and Fei Wang and Chen Qian and Changshui Zhang and Xiaogang Wang and Chang Xu},
+      booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
       year={2021},
-      eprint={2107.09282},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      url={https://openreview.net/forum?id=ErivP29kYnx}
 }
 ```
 
