@@ -7,6 +7,9 @@ For details see [ReSSL: Relational Self-Supervised Learning with Weak Augmentati
 ![ReSSL](img/framework.png)
 
 
+## Cifar10 / STL10 
+This repository is based on ImageNet dataset, We also provide the training code and pretrained model for cifar10/100, STL10 and TinyImageNet, please download it from [this link](https://drive.google.com/file/d/1j2I1Lh9Dy7cHb6YO0PZ8HXDNewXrHO-j/view?usp=sharing).
+
 ## Reproducing
 
 To run the code, you probably need to change the Dataset setting (dataset/imagenet.py), and Pytorch DDP setting (util/dist_init.py) for your own server enviroments.
